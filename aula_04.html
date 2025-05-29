@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurante Tropical Lisboa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #e6fff9;
+      font-family: 'Arial', sans-serif;
+    }
+    .brand-title {
+      color: #ff5e4d;
+      font-weight: bold;
+    
+    }
+    .btn-yellow {
+      background-color: #ffd700;
+      color: #006600;
+      font-weight: bold;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 220px;
+      height: 100%;
+      background-color: #fff;
+      border-left: 2px solid #ccc;
+      padding: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      color: #00695c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .main-content {
+      margin-right: 240px;
+      padding: 20px;
+    }
+    .section {
+      display: none;
+    }
+    .active-section {
+      display: block;
+    }
+    .card {
+      background-color: #ffffff;
+    }
+
+    
+    .Footer {
+      background-color: #ffffff; /* Verde Menta */
+      text-align: center;
+      padding: 20px;
+    }
+
+    .Footer h6,
+    .Footer p {
+      color: #000000; /* Texto preto */
+      font-style: italic;
+      font-weight: bold;
+      font-size: 0.9rem; /* Texto menor */
+      margin: 8px 0;
+    }
+    
+
+  </style>
+</head>
+<body>
+
+  <!-- Menu horizontal -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-title" href="#">Restaurante Tropical Lisboa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('home')">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('quem-somos')">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('promocao')">Promoção</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('cardapio')">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('contato')">Fale Conosco</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="mostrarSecao('localizacao')">Localização</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="container main-content">
+
+    <div id="home" class="section active-section text-center">
+      <h1 class="brand-title display-4">Tropical Lisboa</h1>
+      <p class="lead">Bem-vindo ao verdadeiro sabor brasileiro!</p>
+    </div>
+
+    <!-- Quem Somos -->
+    <div id="quem-somos" class="section">
+      <h2 class="text-center brand-title mb-4">Quem Somos</h2>
+      <p>Somos um restaurante familiar especializado em culinária brasileira, oferecendo pratos típicos com ingredientes frescos e um atendimento acolhedor.</p>
+    </div>
+
+    <div id="promocao" class="section">
+      <h2 class="text-center brand-title mb-4" >Promoção</h2>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Oferta Especial</h5>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="imagem/cerveja.jpg" class="d-block mx-auto w-100" style="max-height: 75vh; object-fit: contain;" alt="Promoção de Chopp 2 por 1">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+        <h5 class="text-white">HAPPY HOUR: Chopp 2 por 1 das 17h às 19h</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="imagem/vinho.jpg" class="d-block mx-auto w-100" style="max-height: 75vh; object-fit: contain;" alt="Taça de vinho em promoção">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+        <h5 class="text-white">Promoção de Vinho toda segunda-feira</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles Laterais -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- CARDÁPIO DE COMIDA-->
+    <div id="cardapio" class="section">
+      <h2 class="text-center brand-title mb-4">Nosso Cardápio</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Bobó de Camarão</h5><p class="card-text">Camarões refogados ao creme de mandioca com tempero baiano.</p><p class="fw-bold text-success">R$ 49,90</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Churrasco Brasileiro</h5><p class="card-text">Cortes variados assados na brasa com acompanhamentos.</p><p class="fw-bold text-success">R$ 59,90</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Feijoada Completa</h5><p class="card-text">Feijão preto com carnes defumadas, arroz, farofa e couve.</p><p class="fw-bold text-success">R$ 44,90</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Baião de Dois</h5><p class="card-text">Arroz com feijão verde, queijo coalho e carne seca.</p><p class="fw-bold text-success">R$ 39,90</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Strogonoff de Frango</h5><p class="card-text">Cubos de frango ao molho cremoso com arroz e batata palha.</p><p class="fw-bold text-success">R$ 36,90</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Batata Frita</h5><p class="card-text">Porção crocante de batata frita.</p><p class="fw-bold text-success">R$ 12,90</p></div></div></div>
+
+      </div>
+<!-- CARDÁPIO DE BEBIDA -->
+      <h3 class="text-center brand-title my-4">Bebidas</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Chopp</h5><p class="card-text">Chope claro, bem gelado.</p><p class="fw-bold text-success">R$ 11,50</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Suco Natural</h5><p class="card-text">Sucos da estação.</p><p class="fw-bold text-success">R$ 7,00</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Cerveja</h5><p class="card-text">Brahma, Stella, Amstel, 600ml.</p><p class="fw-bold text-success">R$ 15,99</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Refrigerante</h5><p class="card-text">Coca-Cola, Guarana Antartica, Pepsi, 2L.</p><p class="fw-bold text-success">R$ 13,99</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Vinho</h5><p class="card-text">Taça de vinho tinto ou branco.</p><p class="fw-bold text-success">R$ 21,99</p></div></div></div>
+        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Água</h5><p class="card-text">Com ou sem gás, 250 ml.</p><p class="fw-bold text-success">R$ 4,99</p></div></div></div>
+    
+    </div>
+        </div>
+    </div>
+</div>
+
+        <!-- FALE CONOSCO -->
+    <div id="contato" class="section py-3">
+  <h2 class="text-center brand-title mb-3">Fale Conosco</h2>
+  
+  <form id="form-contato" class="mx-auto" style="max-width: 600px;">
+    <div class="mb-2">
+      <label class="form-label">Nome:</label>
+      <input type="text" class="form-control" required placeholder="Seu nome...">
+    </div>
+    <div class="mb-2">
+      <label class="form-label">E-mail:</label>
+      <input type="email" class="form-control" required placeholder="Seu E-mail...">
+    </div>
+    <div class="mb-2">
+      <label class="form-label">Assunto:</label>
+      <input type="text" class="form-control" required placeholder="Ex: Reserva, Pedido, Dúvida, Reclamação...">
+    </div>
+    <div class="mb-2">
+      <label class="form-label">Mensagem:</label>
+      <textarea class="form-control" rows="5" required></textarea>
+    </div>
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-yellow">Enviar</button>
+      <button type="reset" class="btn btn-secondary ms-2">Limpar</button>
+    </div>
+  </form>
+
+  <div id="form-msg" class="mt-3 text-success text-center" style="display:none;">Mensagem enviada com sucesso!</div>
+</div>
+
+    <!-- LOCALIZAÇÃO -->
+     <div id="localizacao" class="section">
+      <h2 class="text-center brand-title ">Localização</h2>
+      <p> Nossa localização no mapa:</p>
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4170654315967!2d-43.440452425041855!3d-23.00557564140839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdce65f17f25d%3A0x9c52d374470787a9!2sAv.%20das%20Am%C3%A9ricas%2C%2012900%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022790-702!5e1!3m2!1spt-BR!2sbr!4v1748450545059!5m2!1spt-BR!2sbr" width="1290" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+  </div>
+</div>
+
+ </style>
+</head>
+<body>
+
+  <div class="Footer">
+    <h6 class="center">
+      <strong><em>2025 Criado por Wallace Rosseli</em></strong>
+    </h6>
+    <p><strong><em>PROJETO FINAL PARA UC2: FRONT-END PARA WEB</em></strong></p>
+  </div>
+
+
+
+
+  <script>
+    function mostrarSecao(id) {
+      document.querySelectorAll('.section').forEach(secao => secao.classList.remove('active-section'));
+      document.getElementById(id).classList.add('active-section');
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById('form-contato')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('form-msg').style.display = 'block';
+      this.reset();
+      setTimeout(() => document.getElementById('form-msg').style.display = 'none', 5000);
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
