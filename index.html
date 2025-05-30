@@ -43,6 +43,7 @@
     .main-content {
       margin-right: 240px;
       padding: 20px;
+      margin-left: 4%;
     }
     .section {
       display:none;
@@ -103,55 +104,34 @@
       <h1 class="text-align: center;                  brand-title display-4">Tropical Lisboa</h1>
       <p class="lead">Bem-vindo ao verdadeiro sabor brasileiro!</p>
 
-      <div class="center"  class="d-block w-10" style="margin-left: 45%; width: 300px">
+      <div class="center"  class="d-block w-100" style="margin-left: 35%; "  >
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="max-width: 400px;">
     <div class="carousel-inner">
       
       <div class="carousel-item active" data-bs-interval="2000">
-        <img src="logo.png" class="d-block w-100" alt="Logo">
-      </div>
+        <img style="height: 400px" src="logo.png" class="d-block w-100" alt="Logo"></div>
 
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="restaurante.jpg" class="d-block w-100" alt="Restaurante">
-      </div>
+        <img  style="height: 400px" src="restaurante.jpg" class="d-block w-100" alt="Restaurante"></div>
 
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="fachada.png" class="d-block w-100" alt="Fachada">
-      </div>
+        <img style="height: 400px" src="fachada.png" class="d-block w-100" alt="Fachada"></div>
 
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="comida3.jpg" class="d-block w-100" alt="Comida 3">
-      </div>
+        <img style="height: 400px" src="comendo.png" class="d-block w-100" alt="Família comendo"></div>
 
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="comida2.png" class="d-block w-100" alt="Comida 2">
-      </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="comida.jpg" class="d-block w-100" alt="Comida">
-      </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="comendo.png" class="d-block w-100" alt="Família comendo">
-      </div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="amigos.jpg" class="d-block w-100" alt="Amigos">
-      </div>
-
-    </div>
+        <img style="height: 400px" src="amigos.jpg" class="d-block w-100" alt="Amigos"></div></div>
 
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
+      <span class="visually-hidden">Anterior</span></button>
 
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Próximo</span>
-    </button>
-  </div>
-</div>
+    </button> </div> </div>
+    
     </div>
 
     <!-- Quem Somos -->
@@ -235,19 +215,54 @@
   </div>
 </div>
 
-<!-- CARDÁPIO DE COMIDA-->
-    <div id="cardapio" class="section">
-      <h2 class="text-center brand-title mb-4">Nosso Cardápio</h2>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Bobó de Camarão</h5><p class="card-text">Camarões refogados ao creme de mandioca com tempero baiano.</p><p class="fw-bold text-success">R$ 49,90</p></div></div></div>
-        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Churrasco Brasileiro</h5><p class="card-text">Cortes variados assados na brasa com acompanhamentos.</p><p class="fw-bold text-success">R$ 59,90</p></div></div></div>
-        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Feijoada Completa</h5><p class="card-text">Feijão preto com carnes defumadas, arroz, farofa e couve.</p><p class="fw-bold text-success">R$ 44,90</p></div></div></div>
-        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Baião de Dois</h5><p class="card-text">Arroz com feijão verde, queijo coalho e carne seca.</p><p class="fw-bold text-success">R$ 39,90</p></div></div></div>
-        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Strogonoff de Frango</h5><p class="card-text">Cubos de frango ao molho cremoso com arroz e batata palha.</p><p class="fw-bold text-success">R$ 36,90</p></div></div></div>
-        <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Batata Frita</h5><p class="card-text">Porção crocante de batata frita.</p><p class="fw-bold text-success">R$ 12,90</p></div></div></div>
+      
+        <!-- Cardápio -->
+  <div id="cardapio" class="section py-4">
+    <h2 class="text-center brand-title mb-3">Cardápio</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+    
+    <div class="col-md-3">
+      <div class="card mb-1 shadow-sm">
+        <img src="comida3.jpg" class="card-img-top" alt="Churrasco Brasileiro">
+        <div class="card-body text-center">
+          <h5 class="card-title">Churrasco Brasileiro</h5><p class="card-text">Cortes variados assados na brasa com acompanhamentos.</p><p class="fw-bold text-success">R$ 59,90 </span></div> </div></div>
+        
+    <div class="col-md-3">
+      <div class="card mb-1 shadow-sm">
+        <img src="comida.jpg" class="card-img-top" alt="Bobó de Camarão">
+        <div class="card-body text-center">
+          <h5 class="card-title">Bobó de Camarão</h5><p class="card-text">Camarões refogados ao creme de mandioca com tempero baiano.</p><p class="fw-bold text-success">R$ 49,90</span></div> </div></div>
 
-      </div>
-<!-- CARDÁPIO DE BEBIDA -->
+    <div class="col-md-3">
+      <div class="card mb-1 shadow-sm">
+        <img src="comida2.png" class="card-img-top" alt="Strogonoff de Frango">
+        <div class="card-body text-center">
+          <h5 class="card-title">Strogonoff de Frango</h5><p class="card-text">Cubos de frango ao molho cremoso com arroz e batata palha.</p><p class="fw-bold text-success">R$ 36,90</span> </div></div></div>
+    
+
+
+    <div class="col-md-3">
+      <div class="card mb-1 shadow-sm">
+        <img src="batata.jpg" class="card-img-top" alt="Baião de Dois">
+        <div class="card-body text-center">
+          <h5 class="card-title">Baião de Dois</h5><p class="card-text">Arroz com feijão verde, queijo coalho e carne seca.</p><p class="fw-bold text-success">R$ 39,90 </span></div> </div></div>          
+
+
+    <div class="col-md-3">
+      <div class="card mb-1 shadow-sm">
+        <img src="batata.jpg" class="card-img-top" alt="Batata Frita">
+        <div class="card-body text-center">
+          <h5 class="card-title">Batata Frita</h5><p class="card-text">Porção crocante de batata frita.</p><p class="fw-bold text-success">R$ 15,90 </span></div> </div></div>
+    
+    <div class="col-md-3">
+      <div class="card mb-1 shadow-sm">
+        <img src="peixe.jpg" class="card-img-top" alt="Peixe">
+        <div class="card-body text-center">
+          <h5 class="card-title">Peixe</h5><p class="card-text">Porção peixe frito com pirão.</p><p class="fw-bold text-success">R$ 30,90 </span></div> </div></div>
+
+    </div>
+        <!-- CARDÁPIO DE BEBIDA -->
+  
       <h3 class="text-center brand-title my-3">Bebidas</h3>
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Chopp</h5><p class="card-text">Chope claro, bem gelado.</p><p class="fw-bold text-success">R$ 11,50</p></div></div></div>
@@ -305,16 +320,10 @@
 </head>
 <body>
 
-<div class="Footer">
-    <h6 class="center">
-      <strong><em>2025 Criado por Wallace Rosseli</em></strong>
-    </h6>
-    <p><strong><em>PROJETO FINAL PARA UC2: FRONT-END PARA WEB</em></strong></p>
-</div>
-      <h6 class="lead" style="font-size: 90%; background-color: #f0f0f0;">
-        <p>SE BEBER, NÃO DIRIJA.</p> 
-        <p>VENDA E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS</p>
-      </h6>  
+<footer class="Footer" style="background-color: #f0f0f0">
+    <h6>Criado por Wallace Rosseli em 2025</h6>
+    <p> PROJETO FINAL PARA UC2: FRONT-END PARA WEB.</p>
+</footer>
 
     </div>
 
