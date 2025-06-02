@@ -52,25 +52,9 @@
       display: block;
     }
     .card {
-      background-color: #ffffff;
-    }
-
-   
-    .Footer {
-     
-      text-align: center;
-      padding: 20px;
-    }
-
-    .Footer h6,
-    .Footer p {
-      color: #000000; /* Texto preto */
-      font-style: italic;
-      font-weight: bold;
-      font-size: 0.9rem; /* Texto menor */
-      margin: 8px 0;
-    }
-   
+      background-color:#f7f8f9;
+      box-shadow: rgb(247, 248, 249);
+    } 
       
 
   </style>
@@ -96,58 +80,44 @@
       </div>
     </div>
   </nav>
-
-
-
-
-
-
-
-
   
   <!-- Conteúdo principal -->
 
- 
-  <div class="container main-content">
+  <div class="container main-content py-4">
 
     <div id="home" class="section active-section text-center">
       <h1 class= "brand-title display-4">Tropical Lisboa</h1>
       <p class="lead">Bem-vindo ao verdadeiro sabor brasileiro!</p>
-    <div style="margin-left: 30%; height: 400% "> 
-      <div class="center"  class="d-block w-100"    style="object-fit: contain;  "  >
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="max-width: 500px; align-items: center;">
-    <div class="carousel-inner">
-      
-      <div class="carousel-item active" data-bs-interval="2000">
-        <img src="logo.png" class="d-block w-100" alt="Logo"></div>
-
-      <div class="carousel-item" data-bs-interval="2000">
-        <img   src="restaurante.jpg" class="d-block w-100" alt="Restaurante"></div>
-
-      <div class="carousel-item" data-bs-interval="2000">
-        <img  style="height: 400px"src="fachada.png" class="d-block w-100" alt="Fachada"></div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img  style="height: 400px" src="comendo.png" class="d-block w-100" alt="Família comendo"></div>
-
-      <div class="carousel-item" data-bs-interval="3000">
-        <img style="height: 400px" src="amigos.jpg" class="d-block w-100" alt="Amigos"></div></div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span></button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button> </div> </div>
-  </div>     
-    
-
-
-    
-    <br>
-    <br>
+    <!-- Carrossel Centralizado e Responsivo -->
+    <div class="d-flex justify-content-center">
+      <div id="carouselExampleInterval" class="carousel slide w-100" style="max-width: 500px;" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="logo.png" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="Logo">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="restaurante.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="Restaurante">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="fachada.png" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="Fachada">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="comendo.png" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="Família comendo">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="amigos.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" alt="Amigos">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
     <br>
 
     <!-- Button trigger modal -->
@@ -177,50 +147,61 @@
   </div>
 </div>
 
-    <br>
-    <br>
-    <br>
-    
+    </div>
 
-    </div>
-  
-   
-    <!-- Quem Somos -->
-    <div id="quem-somos" class="section">
-      <h2 class="text-center brand-title mb-4">Quem Somos</h2>
-      <h3 class="lead">Nossa História </h3>
-      <p style="text-align:justify  " >Fundado em 1995 no coração de Lisboa, o Restaurante Tropical nasceu do sonho de uma família brasileira apaixonada por gastronomia e boas histórias ao redor da mesa. Inspirados pelas receitas de família passadas de geração em geração, decidimos trazer os sabores marcantes do Brasil para Portugal, com o objetivo de proporcionar uma experiência verdadeiramente tropical a cada cliente.
-        Desde o início, nossa missão tem sido simples: oferecer pratos típicos brasileiros preparados com ingredientes frescos e muito carinho, num ambiente acolhedor que faz cada visita parecer um almoço de domingo em família. Do cheiro do feijão tropeiro ao sabor da moqueca baiana, cada prato conta um pedaço da nossa cultura e da nossa história.Com mais de duas décadas de tradição, o Tropical se tornou mais do que um restaurante — é um ponto de encontro para brasileiros que sentem saudade de casa e para portugueses e turistas que desejam descobrir os encantos da culinária brasileira autêntica.
-        Hoje, seguimos firmes no propósito de servir comida com alma, calor humano e aquele toque especial que só uma casa de família pode oferecer. </p>
-        <p class=" brand-title mb-4"> Sejam bem-vindos ao Restaurante Tropical — onde cada refeição é uma celebração da vida...</p>
-        <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="somos_1.png" class="d-block w-10" style="margin-left: 40%; width: 400px;" alt="familía almoçando">
-          </div>
-          <div class="carousel-item">
-            <img src="somos_2.jpeg" class="d-block w-10" style="margin-left: 40%; width: 400px;" alt="familía almoçando">
-          </div>
-          <div class="carousel-item">
-            <img src="somos_3.jpeg" class="d-block w-10" style="margin-left: 40%; width: 400px;" alt="familía almoçando">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!--  Quem Somos -->
+<div id="quem-somos" class="section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center brand-title mb-4">Quem Somos</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h3 class="lead text-center mb-3">Nossa História</h3>
+        <p class="text-justify">
+          Fundado em 1995 no coração de Lisboa, o Restaurante Tropical nasceu do sonho de uma família brasileira apaixonada por gastronomia e boas histórias ao redor da mesa. Inspirados pelas receitas de família passadas de geração em geração, decidimos trazer os sabores marcantes do Brasil para Portugal, com o objetivo de proporcionar uma experiência verdadeiramente tropical a cada cliente.
+        </p>
+        <p class="text-justify">
+          Desde o início, nossa missão tem sido simples: oferecer pratos típicos brasileiros preparados com ingredientes frescos e muito carinho, num ambiente acolhedor que faz cada visita parecer um almoço de domingo em família. Do cheiro do feijão tropeiro ao sabor da moqueca baiana, cada prato conta um pedaço da nossa cultura e da nossa história.
+        </p>
+        <p class="text-justify">
+          Com mais de duas décadas de tradição, o Tropical se tornou mais do que um restaurante — é um ponto de encontro para brasileiros que sentem saudade de casa e para portugueses e turistas que desejam descobrir os encantos da culinária brasileira autêntica.
+        </p>
+        <p class="text-center brand-title mt-4">
+          Sejam bem-vindos ao Restaurante Tropical — onde cada refeição é uma celebração da vida...
+        </p>
       </div>
-    
     </div>
+
+    <!-- Carrossel de Imagens Responsivo -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="somos_1.png" class="d-block mx-auto img-fluid rounded" style="max-width: 400px;" alt="Família almoçando">
+        </div>
+        <div class="carousel-item">
+          <img src="somos_2.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 400px;" alt="Família almoçando">
+        </div>
+        <div class="carousel-item">
+          <img src="somos_3.jpeg" class="d-block mx-auto img-fluid rounded" style="max-width: 400px;" alt="Família almoçando">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div>
+</div>
+
       
    <!-- Promoção -->
     <div id="promocao" class="section">
@@ -261,7 +242,16 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Próximo</span>
   </button>
+
+  
 </div>
+  <div class="container my-4">
+  <div class="alert alert-danger text-center" role="alert">
+    <strong>SE BEBER, NÃO DIRIJA.</strong>
+    <p class="mb-0">VENDA E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS.</p>
+  </div>
+</div>
+
     </div>
   </div>
 </div>
@@ -290,14 +280,11 @@
         <div class="card-body text-center">
           <h5 class="card-title">Strogonoff de Frango</h5><p class="card-text">Cubos de frango ao molho cremoso com arroz e batata palha.</p><p class="fw-bold text-success">R$ 36,90</span> </div></div></div>
     
-
-
     <div class="col-md-3">
       <div class="card mb-1 shadow-sm">
         <img src="baiao.jpeg" class="card-img-top" alt="Baião de Dois">
         <div class="card-body text-center">
           <h5 class="card-title">Baião de Dois</h5><p class="card-text">Arroz com feijão verde, queijo coalho e carne seca.</p><p class="fw-bold text-success">R$ 39,90 </span></div> </div></div>          
-
 
     <div class="col-md-3">
       <div class="card mb-1 shadow-sm">
@@ -336,6 +323,13 @@
         <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Água</h5><p class="card-text">Com ou sem gás, 250 ml.</p><p class="fw-bold text-success">R$ 4,99</p></div></div></div>
     
     </div>
+    <div class="container my-4">
+  <div class="alert alert-danger text-center" role="alert">
+    <strong>SE BEBER, NÃO DIRIJA.</strong>
+    <p class="mb-0">VENDA E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS.</p>
+  </div>
+</div>
+
         </div>
     </div>
 </div>
@@ -379,40 +373,32 @@
   </div>
 </div>
 
-    <div class="Footer" style="background-color: #f0f0f0">
-      <h6>©Criado por Wallace Rosseli em 2025</h6>
-      <p> PROJETO FINAL PARA UC2: FRONT-END PARA WEB.</p>
+<!--Rodapé-->
 
-      <div class="container-fluid">
-        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="social-button tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-   
-        </div>
-        </footer>
+    <footer class="bg-light text-center text-lg-start mt-5 border-top pt-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto -->
+      <div class="col-lg-6 col-md-12 mb-3 text-center text-lg-start">
+        <h6 class="text-muted mb-1">© Criado por Wallace Rosseli - 2025</h6>
+        <p class="text-muted mb-0">Projeto final para UC2: Front-End para Web.</p>
+        <h5 class="lead mt-3" style="color: #ff5e4d;">Nossos Horários</h5>
+        <address class="mb-0" style="color: #ff5e4d;">Segunda a sábado, das 11h às 22h</address>
       </div>
-  </div>
 
-
-
-
-
-  </div>
- </style>
-</head>
-<body>
-
-
-
-  <h5 class="lead" style="color: #ff5e4d;"   >Nossos Horários</h5>
-    <address  style="color: #ff5e4d;"> Segunda a sábado, das 11h às 22h </address>
-  
-    
-
+      <!-- Redes Sociais -->
+     <div class="col-lg-6 col-md-12 text-center text-lg-end">
+  <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+    <img src="face.png" alt="Facebook" style="width: 32px; height: 32px; margin: 0 8px;">
+  </a>
+  <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" aria-label="WhatsApp">
+    <img src="Wpp.png" alt="WhatsApp" style="width: 32px; height: 32px; margin: 0 8px;">
+  </a>
+  <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+    <img src="insta.jpg" alt="Instagram" style="width: 32px; height: 32px; margin: 0 8px;">
+  </a>
 </div>
-</div>
+
 </body>
 </html>
 
