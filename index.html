@@ -42,9 +42,10 @@
       text-decoration: none;
     }
     .main-content {
+
       margin-right: 240px;
       padding: 20px;
-      margin-left: 4%;
+      display: block;
 
     }
     .section {
@@ -55,9 +56,8 @@
     }
     .card {
       background-color:#f7f8f9;
-      box-shadow: rgb(247, 248, 249);
+      box-shadow:rgb 247, 248, 249;  
     } 
-      
     .text-justify {
     text-align: justify;
     }
@@ -77,7 +77,10 @@
       max-height: 70vh;
       object-fit: contain;
     }
-    
+    .promo{
+      margin-left: 20%;
+
+    }
 
   </style>
 </head>
@@ -153,13 +156,17 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Restaurante Tropical Lisboa</h1>
+        <h1 class="modal-title fs-5 brand-title " id="exampleModalLabel">Restaurante Tropical Lisboa</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="text-align:justify" >
         No Restaurante Tropical Lisboa, cada prato conta uma história. Uma história de tradição, de alegria e de raízes profundas na rica culinária brasileira. Com ingredientes autênticos e uma pitada de amor tropical, trazemos o melhor do Brasil para sua mesa, em um ambiente vibrante que mistura o frescor da praia com o calor humano da nossa terra.
-        <p></p>Servimos clássicos como carne de sol com baião de dois, carre acebolado com arroz e feijão, moqueca de camarão, além de churrascos suculentos e acompanhamentos caseiros que aquecem a alma.</p>Nosso espaço reflete a mesma energia dos nossos pratos: cores vibrantes, aromas envolventes e um atendimento que faz você se sentir em casa.
-        <p></p>🥇 Premiado com o Troféu de Melhor Comida Brasileira em Lisboa, somos reconhecidos não só pelo sabor, mas também pelo compromisso com a qualidade, autenticidade e experiência. </p> Se você procura uma viagem gastronômica ao Brasil sem sair de Lisboa, você está no lugar certo.
+        
+        <p></p>Servimos clássicos como carne de sol com baião de dois, carre acebolado com arroz e feijão, moqueca de camarão, além de churrascos suculentos e acompanhamentos caseiros que aquecem a alma.</p>
+        
+        <p>Nosso espaço reflete a mesma energia dos nossos pratos: cores vibrantes, aromas envolventes e um atendimento que faz você se sentir em casa.</p>
+        
+        <p>🥇 Premiado com o Troféu de Melhor Comida Brasileira em Lisboa, somos reconhecidos não só pelo sabor, mas também pelo compromisso com a qualidade, autenticidade e experiência. </p> Se você procura uma viagem gastronômica ao Brasil sem sair de Lisboa, você está no lugar certo.
       </div>
       <div class="modal-footer" >
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -168,6 +175,7 @@
     </div>
   </div>
 </div>
+    <br>
     <br>
     <br>
     
@@ -229,11 +237,13 @@
       
    <!-- Promoção -->
     <div id="promocao" class="section"  >
-      <div class="container full-center">
-        
+    <div class=" promo">
+      <h2 class="promo brand-title mb-4">Promoção</h2>
+
       
-  <div class="card w-100" style="max-width: 800px;">
-    <div class="card-body p-0">
+
+    <div class="card w-100" style="max-width: 700px;">
+      <div class="card-body p-0">
 
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <!-- Indicadores -->
@@ -252,7 +262,7 @@
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img src="vinho.jpeg" class="d-block w-100" alt="Taça de vinho em promoção">
-            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-5 rounded p-2">
               <h5 class="text-white">Promoção de Vinho toda segunda-feira</h5>
             </div>
           </div>
@@ -273,7 +283,7 @@
   </div>
 
   <!-- Alerta -->
-  <div class="alert alert-danger text-center mt-4 w-100" style="max-width: 800px;">
+  <div class="alert alert-danger text-center mt-4 w-100" style="max-width: 700px;">
     <strong>SE BEBER, NÃO DIRIJA.</strong>
     <p class="mb-0">VENDA E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS.</p>
   </div>
@@ -282,7 +292,8 @@
     </div>
       
         <!-- Cardápio -->
-  <div id="cardapio" class="section py-4">     
+  <div id="cardapio" class="section py-4">    
+    <h3 class="text-center brand-title my-3">Cardápio</h3> 
     <div class="row row-cols-lg-4 row-cols-lg-4 g-4">
     <div class="col-md-4">
       <div class="card mb-1 shadow-sm">
@@ -294,44 +305,44 @@
       <div class="card mb-1 shadow-sm">
         <img src="comida.jpg" class="card-img-top" alt="Bobó de Camarão">
         <div class="card-body text-center">
-          <h5 class="card-title">Bobó de Camarão</h5><p class="card-text">Camarões refogados ao creme de mandioca com tempero baiano.</p><p class="fw-bold text-success">R$ 49,90</span></div> </div></div>
+          <h5 class="card-title">Bobó de Camarão</h5><p class="card-text">Camarões refogados ao creme de mandioca com tempero baiano.</p><p class="fw-bold text-success">R$ 49,90</div> </div></div>
 
     <div class="col-md-4">
       <div class="card mb-1 shadow-sm">
         <img src="comida2.png" class="card-img-top" alt="Strogonoff de Frango">
         <div class="card-body text-center">
-          <h5 class="card-title">Strogonoff de Frango</h5><p class="card-text">Cubos de frango ao molho cremoso com arroz e batata palha.</p><p class="fw-bold text-success">R$ 36,90</span> </div></div></div>
+          <h5 class="card-title">Strogonoff de Frango</h5><p class="card-text">Cubos de frango ao molho cremoso com arroz e batata palha.</p><p class="fw-bold text-success">R$ 36,90 </div></div></div>
     
     <div class="col-md-4">
       <div class="card mb-1 shadow-sm">
         <img src="baiao.jpeg" class="card-img-top" alt="Baião de Dois">
         <div class="card-body text-center">
-          <h5 class="card-title">Baião de Dois</h5><p class="card-text">Arroz com feijão verde, queijo coalho e carne seca.</p><p class="fw-bold text-success">R$ 39,90 </span></div> </div></div>          
+          <h5 class="card-title">Baião de Dois</h5><p class="card-text">Arroz com feijão verde, queijo coalho e carne seca.</p><p class="fw-bold text-success">R$ 39,90 </div> </div></div>          
 
     <div class="col-md-4">
       <div class="card mb-1 shadow-sm">
         <img src="batata.jpg" class="card-img-top" alt="Batata Frita">
         <div class="card-body text-center">
-          <h5 class="card-title">Batata Frita</h5><p class="card-text">Porção crocante de batata frita.</p><p class="fw-bold text-success">R$ 15,90 </span></div> </div></div>
+          <h5 class="card-title">Batata Frita</h5><p class="card-text">Porção crocante de batata frita.</p><p class="fw-bold text-success">R$ 15,90 </div> </div></div>
     
             <div class="col-md-4">
               <div class="card mb-1 shadow-sm">
                 <img src="comida2.png" class="card-img-top" alt="Strogonoff de Carne">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Strogonoff de Carne</h5><p class="card-text">com arroz e batata palha.</p><p class="fw-bold text-success">R$ 40,00 </span></div> </div></div>
+                  <h5 class="card-title">Strogonoff de Carne</h5><p class="card-text">com arroz e batata palha.</p><p class="fw-bold text-success">R$ 40,00 </div> </div></div>
 
                     <div class="col-md-3">
                       <div class="card mb-1 shadow-sm">
                         <img src="carre.jpeg" class="img-fluid" alt="Carré">
                         <div class="card-body text-center">
-                          <h5 class="card-title">Carré</h5><p class="card-text">Carré acebolado com arroz e feijão.</p><p class="fw-bold text-success">R$ 20,50 </span></div> </div></div>
+                          <h5 class="card-title">Carré</h5><p class="card-text">Carré acebolado com arroz e feijão.</p><p class="fw-bold text-success">R$ 20,50 </div> </div></div>
 
     <div class="col-md-3">
       <div class="card mb-1 shadow-sm">
         <img src="peixe.jpeg" class="card-img-top img-fluid" style="height: 450px; object-fit: cover;" alt="Peixe">
 
         <div class="card-body text-center">
-          <h5 class="card-title">Peixe</h5><p class="card-text">Porção peixe frito com pirão e arroz.</p><p class="fw-bold text-success">R$ 30,90 </span></div> </div></div>
+          <h5 class="card-title">Peixe</h5><p class="card-text">Porção peixe frito com pirão e arroz.</p><p class="fw-bold text-success">R$ 30,90 </div> </div></div>
 
     </div>
         <!-- CARDÁPIO DE BEBIDA -->
@@ -355,16 +366,20 @@
 
         </div>
     </div>
-</div>
+
 
         <!-- FALE CONOSCO -->
     <div id="contato" class="section py-3">
-  <h2 class="text-center brand-title mb-3">Fale Conosco</h2>
+  <h2 class="text-center brand-title mb-6">Fale Conosco</h2>
  
   <form id="form-contato" class="mx-auto" style="max-width: 600px;">
-    <div class="mb-2">
+    <div class="mb-1">
       <label class="form-label">Nome:</label>
       <input type="text" class="form-control" required placeholder="Seu nome...">
+    </div>
+    <div class="mb-1">
+    <label class="form-label">Telefone:</label>
+      <input type="text" class="form-control" required placeholder="Seu telefone..." onkeypress="mascara_tel(this)" maxlength="14">
     </div>
     <div class="mb-2">
       <label class="form-label">E-mail:</label>
@@ -378,6 +393,10 @@
       <label class="form-label">Mensagem:</label>
       <textarea class="form-control" rows="5" required></textarea>
     </div>
+    <div class="mb-12">
+      <label class="form-label">Data da Reserva:</label>
+      <input type="date" class="form-control" >
+    </div>
     <div class="text-center mt-3">
       <button type="submit" class="btn btn-yellow">Enviar</button>
       <button type="reset" class="btn btn-secondary ms-2">Limpar</button>
@@ -389,38 +408,47 @@
 
    <div id="localizacao" class="section">
   <h2 class="text-center brand-title">Localização</h2>
+  <br>
    <div class="d-flex justify-content-center align-items-center">
     <div class="embed-responsive embed-responsive-16by9" style="width: 100%; max-width: 600px;">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4170654315963!2d-43.44045242504185!3d-23.005575641408395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdce65f17f25d%3A0x9c52d374470787a9!2sAv.%20das%20Am%C3%A9ricas%2C%2012900%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022790-702!5e1!3m2!1spt-BR!2sbr!4v1748535746777!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
   </div>
 </div>
 
 <!--Rodapé-->
 
-    <footer class="bg-light text-center text-lg-start mt-5 border-top pt-4">
-  <div class="container">
-    <div class="row align-items-">
-      <!-- Texto -->
-      <div class="col-lg-6 col-md-1 mb-3 text-center text-lg-start">
+<footer class="bg-light text-lg-start mt-5 border-top pt-4">
+  
+    <div class="row justify-content-between align-items-center">
+      <!-- Texto à esquerda -->
+      <div class="col-md-6 mb-3 text-start">
         <h6 class="text-muted mb-1">© Criado por Wallace Rosseli - 2025</h6>
         <p class="text-muted mb-0">Projeto final para UC2: Front-End para Web.</p>
         <h5 class="lead mt-3" style="color: #ff5e4d;">Nossos Horários</h5>
         <address class="mb-0" style="color: #ff5e4d;">Segunda a sábado, das 11h às 22h</address>
       </div>
 
-      <!-- Redes Sociais -->
-     <div class="col-lg-6 col-md-3 text-justify text-lg-end">
-  <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-    <img src="face.png" alt="Facebook" style="width: 32px; height: 32px; margin: 0 8px;">
-  </a>
-  <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" aria-label="WhatsApp">
-    <img src="Wpp.png" alt="WhatsApp" style="width: 32px; height: 32px; margin: 0 8px;">
-  </a>
-  <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-    <img src="insta.jpg" alt="Instagram" style="width: 32px; height: 32px; margin: 0 8px;">
-  </a>
-</div>
+      <!-- Redes Sociais à direita -->
+      <div class="col-md-6 mb-3 text-end ">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <img src="face.png" alt="Facebook" style="width: 32px; height: 32px; margin: 0 8px;">
+        </a>
+        <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" aria-label="WhatsApp">
+          <img src="Wpp.png" alt="WhatsApp" style="width: 32px; height: 32px; margin: 0 8px;">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <img src="insta.jpg" alt="Instagram" style="width: 32px; height: 32px; margin: 0 8px;">
+        </a>
+      </div>
+    </div>
+    
+</footer>
 
 </body>
 </html>
@@ -458,6 +486,20 @@
       this.reset();
       setTimeout(() => document.getElementById('form-msg').style.display = 'none', 5000);
     });
+
+
+
+    function mascara_tel(objeto){
+      if (objeto.value.length ==0){
+        objeto.value= objeto.value + '(';
+      }
+      if(objeto.value.length ==3){
+        objeto.value= objeto.value + ')';}
+      if(objeto.value.length ==9){
+        objeto.value= objeto.value + '-';}
+
+      }
+        
   </script>
 
 
