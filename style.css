@@ -1,0 +1,79 @@
+body {
+    background-color: #e6fff9;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  .brand-title {
+    color: #ff5e4d;
+    font-weight: bold;
+ 
+  }
+  .btn-yellow {
+    background-color: #ffd700;
+    color: #006600;
+    font-weight: bold;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .sidebar a {
+    display: block;
+    margin: 10px 0;
+    color: #00695c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .main-content {
+
+    margin-right: 240px;
+    padding: 20px;
+    display: block;
+
+  }
+  .section {
+    display:none;
+  }
+  .active-section {
+    display: block;
+  }
+  .card {
+    background-color:#f7f8f9;
+    box-shadow:rgb 247, 248, 249;  
+  } 
+  .text-justify {
+  text-align: justify;
+  }
+
+  html, body {
+    height: 100%;
+  }
+  .full-center {
+    min-height: 100vh;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+  }
+  .carousel-inner img {
+    max-height: 70vh;
+    object-fit: contain;
+  }
+  .promo{
+    margin-left: 20%;
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    
+  }
